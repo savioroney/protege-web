@@ -30,7 +30,7 @@ export default function Footer() {
         <footer className={classes.footer}>
             <Container maxWidth="lg">
                 <Typography variant="h6" align="center" gutterBottom>
-                    Protege BR
+                    My App
                 </Typography>
                 <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
                     Aqui será uma descrição do projeto!

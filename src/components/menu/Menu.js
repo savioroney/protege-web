@@ -27,7 +27,7 @@ export default function Menu() {
             <AppBar position="static">
                 <Toolbar>
                     <Security/>
-                    <Typography variant="h6" className={classes.title}>Protege BR</Typography>
+                    <Typography variant="h6" className={classes.title}>My App</Typography>
                     <Button color="inherit">Sobre</Button>
                     <Button color="inherit">Contato</Button>
                 </Toolbar>
