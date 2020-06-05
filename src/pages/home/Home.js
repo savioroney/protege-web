@@ -10,7 +10,7 @@ import Search from '@material-ui/icons/Search';
 export default function Home() {
     return (
         <div style={{ marginTop: '20px'}}>
-            <Typography variant="h3" align="center">Hospitais Cadastrados</Typography>
+            <Typography variant="h3" align="center">Lugares Cadastrados</Typography>
             <Grid
                 container
                 direction="column"
