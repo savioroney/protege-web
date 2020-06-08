@@ -2,6 +2,7 @@
   "name": "react-myapp",
   "version": "0.1.0",
   "private": true,
+  "main": "index.js",
   "dependencies": {
     "@material-ui/core": "^4.9.10",
     "@material-ui/icons": "^4.9.1",
@@ -9,19 +10,21 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "express": "^4.17.1",
     "flow-bin": "^0.125.1",
     "google-map-react": "^1.1.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "webpack",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "build": "webpack --mode=development",
+    "build-prod": "webpack -p --mode=production",
+    "dev": "webpack-dev-server --watch",
+    "start": "npm run build-prod && node server/index.js",
     "lint": "eslint .",
     "flow": "flow"
   },
