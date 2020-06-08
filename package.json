@@ -22,9 +22,9 @@
   },
   "scripts": {
     "build": "webpack --mode=development",
-    "build-prod": "webpack -p --mode=production",
+    "heroku-postbuild": "webpack -p --mode=production",
     "dev": "webpack-dev-server --watch",
-    "start": "npm run build-prod && node server/index.js",
+    "start": "node server/index.js",
     "lint": "eslint .",
     "flow": "flow"
   },
